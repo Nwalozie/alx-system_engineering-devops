@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-#write a Bash script that configures a new Ubuntu machine to
-#Nginx listening on port 80 for connection.
+# write a Bash script that configures a new Ubuntu machine to
+# Nginx listening on port 80 for connection.
 
 sudo apt-get update -y
 
 sudo apt-get install nginx -y
 
-echo "Hello World" > /var/www/html/index.html
+echo "Hello World" > /var/www/html/index.nginx-debian.html
 
-sudo service nginx restart
+service nginx restart
